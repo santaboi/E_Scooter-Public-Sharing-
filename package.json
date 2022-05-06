@@ -1,0 +1,40 @@
+{
+  "name": "about_us",
+  "version": "1.0.0",
+  "description": "about_us",
+  "scripts": {
+    "compile_pug": "./node_modules/.bin/pug ./parcel/about_us.pug -o ./dist/parcel -P",
+    "compile_sass": "./node_modules/.bin/node-sass ./parcel/about_us.sass -o ./dist/parcel -p",
+    "watch1": "parcel watch parcel/about_us.pug --dist-dir dist/parcel/ --public-url ./ ",
+    "server1": "parcel parcel/about_us.pug --port 1799",
+    "watch2": "parcel watch parcel_app/index.pug --dist-dir dist/parcel_app/ --public-url ./ ",
+    "server2": "parcel parcel_app/index.pug --port 1797"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santaboi/NCKU-E_scooter-app"
+  },
+  "author": "Yang , Fan Chiang <e94081107@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santaboi/NCKU-E_scooter-app/issues"
+  },
+  "homepage": "https://github.com/santaboi/NCKU-E_scooter-app#readme",
+  "keywords": [],
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1",
+    "parcel": "^2.4.1",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@parcel/transformer-pug": "2.5.0",
+    "@parcel/transformer-sass": "2.5.0",
+    "pug": "^3.0.2",
+    "sass": "^1.50.1"
+  }
+}
